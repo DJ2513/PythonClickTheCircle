@@ -41,9 +41,15 @@ while True:
                     score += 1
                     circlePos = (random.randint(0, 1280),
                                  random.randint(0, 720))
+                else:
+                    lives -= 1
+                    if lives == 0:
+                        screen.fill("red")
 
     score_label = font.render(f'Score: {score}', True, "black")
-    screen.fill('lightgreen')
+    lives_label = font.render(f'Lives:{lives} ', True, "black")
+    screen.fill('lightblue')
     pygame.draw.circle(screen, "red", circlePos, 50)
     screen.blit(score_label, (25, 25))
+    screen.blit(lives_label, (1100, 25))
     pygame.display.update()
