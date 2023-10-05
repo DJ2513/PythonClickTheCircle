@@ -38,7 +38,7 @@ while running:
                     lives -= 1
 
     score_label = font.render(f'Score: {score}', True, "black")
-    lives_label = font.render(f'Lives:{lives} ', True, "black")
+    lives_label = font.render(f'Lives: {lives} ', True, "black")
     overalScore_label = font.render(f'Your score was: {score} points!', True, 'white')
     gameOver_label = font.render(f'GAME OVER!', True, 'white')
     screen.fill('lightgreen')
