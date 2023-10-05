@@ -41,7 +41,7 @@ while running:
     lives_label = font.render(f'Lives:{lives} ', True, "black")
     overalScore_label = font.render(f'Your score was: {score} points!', True, 'white')
     gameOver_label = font.render(f'GAME OVER!', True, 'white')
-    screen.fill('lightblue')
+    screen.fill('lightgreen')
     pygame.draw.circle(screen, "red", circlePos, 50)
     screen.blit(score_label, (25, 25))
     screen.blit(lives_label, (1100, 25))
